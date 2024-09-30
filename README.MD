@@ -5,9 +5,12 @@ Alterar o package.json e adicionar
     "type": "module"
 
 Rodar   
+    
     $npm install
 
+    
 alterar os 
+    
     ""= require()" para "import .... from ....""
     "module.exports = ..."    para "export default ..."
 
