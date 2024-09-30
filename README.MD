@@ -1,4 +1,6 @@
-express --git --no-view   
+Criar um novo projeto Express.js, sem Views e com controle de GitHub (.gitignore)
+
+    express --git --no-view   
 
 Alterar o package.json e adicionar 
 
@@ -8,7 +10,7 @@ Rodar
     
     $npm install
 
-    
+
 alterar os 
     
     ""= require()" para "import .... from ....""
