@@ -2,6 +2,12 @@ Criar um novo projeto Express.js, sem Views e com controle de GitHub (.gitignore
 
     express --git --no-view   
 
+ou 
+
+clone o projeto 
+
+
+
 Alterar o package.json e adicionar 
 
     "type": "module"
@@ -13,7 +19,7 @@ Rodar
 
 alterar os 
     
-    ""= require()" para "import .... from ....""
+    "= require()" para "import .... from ....""
     "module.exports = ..."    para "export default ..."
 
 

@@ -15,6 +15,8 @@ import indexRouter from './routes/index.js';
 //var usersRouter = require('./routes/users');
 import usersRouter from './routes/users.js';
 
+import alunosRouter from './routes/alunos.js';
+
 
 //workaround for __dirname
 import { fileURLToPath } from 'url';
@@ -22,9 +24,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // fim do workaround
 
+import alunosServices from './services/AlunosServices.js';
 
-
-var app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -34,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/alunos', alunosRouter);
 
 //module.exports = app;
 export default app;
